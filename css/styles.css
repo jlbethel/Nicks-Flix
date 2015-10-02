@@ -10,3 +10,11 @@
 .justify {
   text-align: justify;
 }
+
+.title-input {
+  width: 90%;
+}
+
+h3.user-form {
+  text-align: center;
+}

@@ -8,12 +8,13 @@
 
 <div class="col-md-8" ui-view="body"></div>
 
-<br>
-<div ng-controller="ReviewsCtrl" class="user-form">
-  <h3>Create New Movie Review</h3>
+<div class="col-md-4"></div>
+
+<div class="col-md-8" ng-controller="ReviewsCtrl" >
+  <h3 class="user-form">Create New Movie Review</h3>
   <form ng-submit="ReviewsFactory.addReview()"  role="form" id="user-input">
     <div class="form-group">
-      <input type="text" ng-model="ReviewsFactory.reviewTitle" class="form-control" placeholder="Enter the title for the review here" required>
+      <input type="text" class="title-input" ng-model="ReviewsFactory.reviewTitle" class="form-control" placeholder="Enter the title for the review here" required>
     </div>
     <div class="form-group">
       <input type="text" ng-model="ReviewsFactory.reviewText" class="form-control" placeholder="Enter review here" required>
