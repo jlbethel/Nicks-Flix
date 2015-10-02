@@ -7,8 +7,20 @@ nicksFlix.config(function($stateProvider, $urlRouterProvider) {
       'header': {
         templateUrl: "partials/header.html",
       },
-      'home': {
+      'body': {
         templateUrl: "partials/home.html",
+      },
+    }
+  });
+
+  $stateProvider.state('reviews', {
+    url: "/reviews",
+    views: {
+      'header': {
+        templateUrl: "partials/header.html",
+      },
+      'body': {
+        templateUrl: "partials/reviews.html"
       },
     }
   });
