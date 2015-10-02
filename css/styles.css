@@ -20,6 +20,5 @@ h3.user-form {
 }
 
 .night {
-  /*background-color: #99badd;*/
-  filter: invert(90%);
+  -webkit-filter: invert(100%);
 }
