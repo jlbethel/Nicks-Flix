@@ -1,3 +1,4 @@
+<!-- Shows reviews -->
 <div class="col-md-4 reviews">
   <ul>
     <li ng-repeat="item in reviews">
@@ -6,10 +7,13 @@
   </ul>
 </div>
 
+<!-- Individual review view -->
 <div class="col-md-8" ui-view="body"></div>
 
+<!-- This div is for formatting -->
 <div class="col-md-4"></div>
 
+<!-- User review submission -->
 <div class="col-md-8">
   <h3 class="user-form">Create New Movie Review</h3>
   <form ng-submit="ReviewsFactory.addReview()"  role="form" id="user-input">
