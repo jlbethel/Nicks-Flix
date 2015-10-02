@@ -27,13 +27,14 @@ nicksFlix.config(function($stateProvider, $urlRouterProvider) {
   });
 
   $stateProvider.state('reviews.text', {
-    url: "/:reviewId",
+    url: "/:reviewTitle",
     views: {
       'header': {
         templateUrl: "partials/header.html",
       },
       'body': {
-        templateUrl: "partials/reviews.text.html"
+        templateUrl: "partials/reviews.text.html",
+        controller: "ReviewsTextCtrl"
       },
     }
   });
